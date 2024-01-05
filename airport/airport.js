@@ -10,11 +10,16 @@ function welcomeGuests(airport) {
   return `Welcome to ${airport.name}!`;
 }
 
+function landPlanes(airport, planesLanded) {
+  airport.availableGates -= planesLanded;
+  return airport;
+}
+
 
 
 module.exports = {
   createAirport,
   welcomeGuests,
-  // landPlanes,
+  landPlanes,
   // checkAirlineLocations
 };
