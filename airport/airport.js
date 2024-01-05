@@ -30,11 +30,23 @@ function landPlanes(airport, planesLanded) {
   return airport;
 }
 
+function checkAirlineLocations(airports, airline) {
+  var locations = []
+
+  for (var i = 0; i < airports.length; i++) {
+    if (airports[i].airlines.includes(airline)) {
+      locations.push(airports[i].name);
+    }
+  }
+
+  return locations;
+}
+
 
 
 module.exports = {
   createAirport,
   welcomeGuests,
   landPlanes,
-  // checkAirlineLocations
+  checkAirlineLocations
 };
