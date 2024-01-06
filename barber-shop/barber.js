@@ -33,8 +33,21 @@ function cutHair(barber, cut) {
   return barber;
 }
 
+function listStyles(barber, desiredLength) {
+  var results = [];
+
+  for (var i = 0; i < barber.haircuts.length; i++) {
+    if (barber.haircuts[i].hairLength.includes(desiredLength)) {
+      results.push(barber.haircuts[i].style);
+    };
+  };
+
+  return results;
+}
+
 module.exports = {
   createBarber,
   giveCompliment,
   cutHair,
+  listStyles,
 };
