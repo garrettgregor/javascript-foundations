@@ -26,7 +26,15 @@ function giveCompliment(compliment) {
   return `This ${compliment.style} looks great!`
 }
 
+function cutHair(barber, cut) {
+  barber.haircuts.push(cut);
+  barber.earnings += cut.price;
+
+  return barber;
+}
+
 module.exports = {
   createBarber,
   giveCompliment,
+  cutHair,
 };
