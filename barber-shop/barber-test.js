@@ -64,7 +64,7 @@ describe('Barber', function() {
     assert.deepEqual(mattCanDoMohawkAndBuzz.haircuts, [ mohawkCut, buzzCut ]);
   });
 
-  it.skip('should earn money for hair cuts', function() {
+  it('should earn money for hair cuts', function() {
     var erin = createBarber('Erin');
 
     var buzzCut = { style: 'buzz', hairLength: 'short', price: 8.00 };
