@@ -8,7 +8,7 @@ describe('Barber', function() {
     assert.equal(sam.name, 'Sam');
   })
 
-  it.skip('should be able to have earnings and known haircuts', function() {
+  it('should be able to have earnings and known haircuts', function() {
     var cut1 = { style: 'mohawk', hairLength: 'short', price: 11.00 };
     var cut2 = { style: 'side part', hairLength: 'medium', price: 12.00 };
 
