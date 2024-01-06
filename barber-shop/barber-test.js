@@ -19,7 +19,7 @@ describe('Barber', function() {
     assert.deepEqual(erin.haircuts, [cut1, cut2]);
   });
 
-  it.skip('should default to no earnings and no haircuts if none provided', function() {
+  it('should default to no earnings and no haircuts if none provided', function() {
     var buzzCut = { style: 'buzz', hairLength: 'short', price: 8.00 };
     var nick = createBarber('Nick', 8.00, [buzzCut]);
 
