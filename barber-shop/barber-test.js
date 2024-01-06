@@ -32,7 +32,7 @@ describe('Barber', function() {
     assert.deepEqual(pam.haircuts, []);
   });
 
-  it.skip('should be able to offer a compliment', function() {
+  it('should be able to offer a compliment', function() {
     var mohawkCut = { style: 'mohawk', hairLength: 'short', price: 11.00 };
     var buzzCut = { style: 'buzz', hairLength: 'short', price: 8.00 };
 
