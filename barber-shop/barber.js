@@ -5,6 +5,8 @@ function createBarber(name, earnings, cuts) {
 
   if (earnings) {
     barber.earnings = earnings;
+  } else {
+    barber.earnings = 0.00;
   };
 
   if (cuts) {
@@ -13,6 +15,8 @@ function createBarber(name, earnings, cuts) {
     for (var i = 0; i < cuts.length; i++) {
       barber.haircuts.push(cuts[i]);
     };
+  } else {
+    barber.haircuts = [];
   }
 
   return barber
