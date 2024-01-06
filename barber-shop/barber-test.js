@@ -2,7 +2,7 @@ var assert = require('chai').assert;
 var { createBarber, giveCompliment, cutHair, listStyles } = require('./barber');
 
 describe('Barber', function() {
-  it.skip('should create a barber with a name', function() {
+  it('should create a barber with a name', function() {
     var sam = createBarber('Sam');
 
     assert.equal(sam.name, 'Sam');
@@ -66,7 +66,7 @@ describe('Barber', function() {
 
   it.skip('should earn money for hair cuts', function() {
     var erin = createBarber('Erin');
- 
+
     var buzzCut = { style: 'buzz', hairLength: 'short', price: 8.00 };
     var sidePartCut = { style: 'side part', hairLength: 'medium', price: 10.00 };
 
