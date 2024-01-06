@@ -79,7 +79,7 @@ describe('Barber', function() {
     assert.equal(erinCanDoBuzzAndSidePart.earnings, 18.00);
   });
 
-  it.skip('should be able to list style options based on desired length', function() {
+  it('should be able to list style options based on desired length', function() {
     var buzzCut = { style: 'buzz', hairLength: 'short', price: 8.00 };
     var sidePartCut = { style: 'side part', hairLength: 'medium', price: 10.00 };
     var bobCut = { style: 'bob', hairLength: 'short', price: 12.00 };
