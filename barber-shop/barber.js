@@ -1,3 +1,9 @@
+function createBarber(name) {
+  return {
+    name: name
+  }
+}
 
-
-module.exports = {  };
+module.exports = {
+  createBarber,
+};
