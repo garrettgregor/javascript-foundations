@@ -3,7 +3,7 @@ var { createEvent, createCalendar, reportMonthlyEvents } = require('./calendar')
 
 describe('Calendar', function () {
 
-  it.skip('should create an event', function () {
+  it('should create an event', function () {
     var event = createEvent("Go to the Park", "August", 25);
 
     assert.equal(event.title, "Go to the Park");
@@ -30,7 +30,7 @@ describe('Calendar', function () {
     var event1 = createEvent("Go to the Park", "August", 25);
     var event2 = createEvent("Dinner with Lucy", "September", 10);
     var events = [event1, event2];
-    
+
     var calendar = createCalendar("Sam", events);
 
     assert.equal(calendar.owner, "Sam");
@@ -48,7 +48,7 @@ describe('Calendar', function () {
     var event2 = createEvent("Dinner with Lucy", "July", 10);
     var event3 = createEvent("Order More Batteries", "July", 2);
     var events = [event1, event2, event3];
-    
+
     var calendar = createCalendar("Sam", events);
 
     var monthlyEvents = reportMonthlyEvents(calendar, "July");
