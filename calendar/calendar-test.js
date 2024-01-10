@@ -26,7 +26,7 @@ describe('Calendar', function () {
     assert.equal(event2, "Error: 0 is not a valid day");
   });
 
-  it.skip('should create a calendar with events', function () {
+  it('should create a calendar with events', function () {
     var event1 = createEvent("Go to the Park", "August", 25);
     var event2 = createEvent("Dinner with Lucy", "September", 10);
     var events = [event1, event2];
