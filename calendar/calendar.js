@@ -20,9 +20,22 @@ function createCalendar(name, events) {
   };
 
   return calendar;
+};
+
+function reportMonthlyEvents(calendar, month) {
+  var results = [];
+
+  for (var i = 0; i < calendar.events.length; i++) {
+    if (calendar.events[i].month === month ) {
+      results.push(calendar.events[i])
+    }
+  };
+
+  return results
 }
 
 module.exports = {
   createEvent,
-  createCalendar
+  createCalendar,
+  reportMonthlyEvents
 };
