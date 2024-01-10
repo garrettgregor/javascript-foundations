@@ -1,9 +1,16 @@
 function createEvent(title, month, day) {
-  return {
+  var event = {
     title: title,
-    month: month,
-    day: day
+    month: month
   };
+
+  if(day > 0 && day < 32) {
+    event.day = day
+  } else {
+    return `Error: ${day} is not a valid day`
+  }
+
+  return event
 }
 
 module.exports = { createEvent };
