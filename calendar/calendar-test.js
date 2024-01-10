@@ -43,7 +43,7 @@ describe('Calendar', function () {
     assert.deepEqual(calendar2.events, [event1, event2]);
   });
 
-  it.skip('should gather events from the same month', function () {
+  it('should gather events from the same month', function () {
     var event1 = createEvent("Go to the Park", "August", 25);
     var event2 = createEvent("Dinner with Lucy", "July", 10);
     var event3 = createEvent("Order More Batteries", "July", 2);
