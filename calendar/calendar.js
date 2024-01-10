@@ -5,12 +5,24 @@ function createEvent(title, month, day) {
   };
 
   if(day > 0 && day < 32) {
-    event.day = day
+    event.day = day;
   } else {
     return `Error: ${day} is not a valid day`
-  }
+  };
 
-  return event
+  return event;
+};
+
+function createCalendar(name, events) {
+  var calendar = {
+    owner: name,
+    events: events
+  };
+
+  return calendar;
 }
 
-module.exports = { createEvent };
+module.exports = {
+  createEvent,
+  createCalendar
+};
