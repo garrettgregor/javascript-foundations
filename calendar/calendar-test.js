@@ -18,7 +18,7 @@ describe('Calendar', function () {
     assert.equal(event2.day, 1);
   });
 
-  it.skip('should return an error if an invalid day is passed in', function () {
+  it('should return an error if an invalid day is passed in', function () {
     var event1 = createEvent("Go to the Park", "August", 35);
     assert.equal(event1, "Error: 35 is not a valid day");
 
