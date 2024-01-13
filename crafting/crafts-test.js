@@ -56,7 +56,7 @@ describe('Crafting', function() {
       assert.deepEqual(updatedCloset, ['glitter', 'thread']);
     });
 
-    it.skip('should not allow you to add the same supply again', function() {
+    it('should not allow you to add the same supply again', function() {
       var fabric = createMaterial('fabric', 'yard', 12.50);
       var paint = createMaterial('paint', 'pint', 3.95);
 
