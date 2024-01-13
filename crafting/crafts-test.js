@@ -67,7 +67,7 @@ describe('Crafting', function() {
   });
 
   describe('Project', function() {
-    it.skip('should create a new craft project', function() {
+    it('should create a new craft project', function() {
       var thread = createMaterial('thread', 'bobbin', 3.67);
       var fabric = createMaterial('aida fabric', 'yard', 15.50);
       var materials = [thread, fabric];
