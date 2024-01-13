@@ -4,7 +4,7 @@ var { createMaterial, calculateMaterialCost, createSupplyCloset, addSupply, crea
 describe('Crafting', function() {
 
   describe('Material', function() {
-    it.skip('should create a new material', function() {
+    it('should create a new material', function() {
       var yarn = createMaterial('yarn', 'skein', 6.99);
 
       assert.equal(yarn.name, 'yarn');
@@ -46,7 +46,7 @@ describe('Crafting', function() {
 
     it.skip('should be able to add new supplies to the supply closet', function() {
       var glitter = createMaterial('glitter', 'ounce', .99);
-      
+
       var myCloset = createSupplyCloset([glitter]);
 
       var thread = createMaterial('thread', 'bobbin', 3.67);
@@ -88,7 +88,7 @@ describe('Crafting', function() {
     it.skip('should be able to see if you have the necessary supplies to start a project', function() {
       var paper = createMaterial('paper', 'ream', 13.99);
       var paint = createMaterial('paint', 'bottle', '4.50');
-      
+
       var materials = [paper, paint];
 
       var mySupplies = createSupplyCloset(materials);
