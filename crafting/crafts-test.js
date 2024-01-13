@@ -38,13 +38,13 @@ describe('Crafting', function() {
       assert.deepEqual(myCloset, { supplies: ['fabric', 'paint', 'yarn'] });
     });
 
-    it.skip('should be able to start empty', function() {
+    it('should be able to start empty', function() {
       var myCloset = createSupplyCloset();
 
       assert.deepEqual(myCloset, { supplies: [] });
     });
 
-    it.skip('should be able to add new supplies to the supply closet', function() {
+    it('should be able to add new supplies to the supply closet', function() {
       var glitter = createMaterial('glitter', 'ounce', .99);
 
       var myCloset = createSupplyCloset([glitter]);
