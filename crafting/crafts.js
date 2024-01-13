@@ -1,7 +1,13 @@
-
+function createMaterial(name, unit, cost) {
+  return {
+    name: name,
+    unit: unit,
+    costPerUnit: cost
+  }
+}
 
 module.exports = {
-  // createMaterial,
+  createMaterial,
   // calculateMaterialCost,
   // createSupplyCloset,
   // addSupply,
