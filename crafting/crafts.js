@@ -29,7 +29,12 @@ function createSupplyCloset(supplies) {
 }
 
 function addSupply(closet, material) {
-  closet.supplies.push(material.name);
+  if(!closet.supplies.includes(material.name)) {
+    closet.supplies.push(material.name);
+  } else {
+    return `You already have ${material.name} in your closet!`;
+  };
+
   return closet.supplies
 }
 
