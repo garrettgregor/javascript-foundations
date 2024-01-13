@@ -12,7 +12,7 @@ describe('Crafting', function() {
       assert.equal(yarn.costPerUnit, 6.99);
     });
 
-    it.skip('should calculate cost of material', function() {
+    it('should calculate cost of material', function() {
       var fabric = createMaterial('fabric', 'yard', 12.50);
 
       var fabricCost = calculateMaterialCost(fabric, 4);
@@ -28,7 +28,7 @@ describe('Crafting', function() {
   });
 
   describe('Supply Closet', function() {
-    it.skip('should create a supply closet', function() {
+    it('should create a supply closet', function() {
       var fabric = createMaterial('fabric', 'yard', 12.50);
       var paint = createMaterial('paint', 'pint', 3.95);
       var yarn = createMaterial('yarn', 'skein', 6.99);
