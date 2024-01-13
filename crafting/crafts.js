@@ -28,6 +28,11 @@ function createSupplyCloset(supplies) {
   return results;
 }
 
+function addSupply(closet, material) {
+  closet.supplies.push(material.name);
+  return closet.supplies
+}
+
 module.exports = {
   createMaterial,
   calculateMaterialCost,
