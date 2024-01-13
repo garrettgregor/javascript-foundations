@@ -78,7 +78,7 @@ describe('Crafting', function() {
       assert.equal(crossStitchProject.status, 'in progress');
     });
 
-    it.skip('should have a status of not started if not specified', function() {
+    it('should have a status of not started if not specified', function() {
       var string = createMaterial('warp string', 'yard', .49);
       var yarn = createMaterial('yarn', 'skein', 7.85);
 
