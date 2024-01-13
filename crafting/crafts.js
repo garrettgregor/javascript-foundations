@@ -39,10 +39,17 @@ function addSupply(closet, material) {
 }
 
 function createNewProject(materials, status) {
-  return {
+  var project = {
     materialsNeeded: materials,
-    status: status
   };
+
+  if(status) {
+    project.status = status;
+  } else {
+    project.status = 'not started'
+  }
+
+  return project
 }
 
 module.exports = {
