@@ -38,11 +38,18 @@ function addSupply(closet, material) {
   return closet.supplies
 }
 
+function createNewProject(materials, status) {
+  return {
+    materialsNeeded: materials,
+    status: status
+  };
+}
+
 module.exports = {
   createMaterial,
   calculateMaterialCost,
   createSupplyCloset,
   addSupply,
-  // createNewProject,
+  createNewProject,
   // compareMaterials
 }
