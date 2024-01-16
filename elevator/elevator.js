@@ -30,7 +30,7 @@ function dropOffPassenger(elevator, passenger) {
       break; // Exit the loop once the passenger is found and removed
     };
   };
-
+  
   return elevator.passengers
 }
 
